@@ -1,0 +1,200 @@
+@CHARSET "ISO-8859-1";
+/****************************************************************************
+CABEÇALHO [INÍCIO]
+*****************************************************************************/
+
+/****************************************************************************
+LOGO DO SISTEMA
+*****************************************************************************/
+#logo{
+	left: 0px;
+	right: 0px;
+	top: 0px;
+	background-image: url("/ponto/images/clock.png");
+	background-repeat: no-repeat;
+	background-color: #464646;
+	border-bottom: 1px solid white;
+	width: 100%;
+	height: 70px;
+	position: absolute;
+	vertical-align: middle;
+	color: white;
+}
+#logo div.titulo{
+	font-size: 40px;
+	text-indent: 70px;
+	font-weight: bold;
+	margin-top: 10px;
+	float: left;
+}
+#divSair{
+	float: right;
+	font-weight: bold;
+}
+
+#divSair img{
+	display: block;
+	margin:0px auto;
+	cursor: pointer;
+	width: 48px;
+	height: 48px;
+	
+}
+
+/****************************************************************************
+MENU DO SISTEMA
+*****************************************************************************/
+#menu{
+	left: 0px;
+	right: 0px;
+	top: 70px;
+	color: #FFF;
+	font-weight: bold;
+	position: absolute;
+	float: left;
+	display: block;
+	width: 100%;
+	cursor: pointer;
+}
+#menuPrincipal{
+	float: left;
+}
+#menuFill{
+	position: relative;
+	height: 35px;
+	right: 0px;
+	margin-right: 0px;
+	background-color: #464646;
+	z-index: -1;
+}
+#menu div.menuItemPrincipal{
+	height: 35px;
+	width: 15em;
+	float: left;
+	display: block;
+	border-right: 1px solid white;
+}
+
+#menu div.menuItemPrincipal div.menuTitulo{
+	height: 35px;
+	width: 15em;
+	float: left;
+	display: block;
+	text-align: center;
+}
+
+#menu div.menuSubItem{
+	border: 1px solid black;
+	float: left;
+	width: 140%;
+	display: none;
+	background-color: #464646;
+}
+#menu div.menuSubItem a{
+	float: left;
+	display: block;
+	width: 100%;
+	height: 2em;
+	text-indent: 1em;
+}
+.menuSelectedItem{
+	background-color: #2580A2;
+}
+/****************************************************************************
+MENSAGENS
+*****************************************************************************/
+div.msgsContainer{
+	float: left;
+	left: 1em;
+	font-weight: bold;
+	font-size: 20px;
+	border-radius: 15px;
+	-moz-border-radius: 15px;
+	width: 90%;
+	margin-left: 5%;
+	margin-right: 5%;
+	display: none;
+
+}
+div.itensMsg{
+	float: left;
+	width: 100%;
+	text-align: justify;
+}
+div.msgFechar{
+	float: right;
+	margin-right: 0.5em;
+	cursor: pointer;	
+}
+
+#msgsErro{
+	color: #530000;
+	background-color: #FE3939;
+}
+#msgErroAviso{
+	margin-left: 1em;
+	float: left;
+}
+#msgsSucesso{
+	color: #1B4916;
+	background-color: #AFCB77;
+}
+
+/****************************************************************************
+CABEÇALHO [FIM]
+*****************************************************************************/
+
+/****************************************************************************
+CORPO [INÍCIO]
+*****************************************************************************/
+body{
+	font-family: arial, verdana, sans-serif;
+	font-weight: normal;
+	font-size: 13px;
+	padding:0px;
+	margin:0px;
+	width: 100%;
+}
+input[type="submit"], input[type="button"]{
+	font-size: 20px;
+	font-weight: bold;
+}
+#corpo{
+	position: absolute;
+	top: 110px;
+	width: 100%;
+	z-index: -1;
+}
+#bodyContent{ 
+	width: 100%; 
+	float: left;
+}
+/****************************************************************************
+CORPO [FIM]
+*****************************************************************************/
+/****************************************************************************
+RODAPÉ [INÍCIO]
+*****************************************************************************/
+#pnlConfirmarSaida{
+	position: absolute;
+	top: 111px;
+	text-align: center;
+	margin:0px 0px; padding:0px;
+	float: left;
+	width: 100%;
+	display: none;
+}
+#frmSairDoSistema{
+	background-color: #464646;
+	color: #FFF;
+	margin:0px auto;
+	padding: 1em;
+	width:200px;
+	border-radius: 15px;
+	-moz-border-radius: 15px;
+	font-weight: bold;
+	font-size: 20px;
+}
+/****************************************************************************
+RODAPÉ [FIM]
+*****************************************************************************/
