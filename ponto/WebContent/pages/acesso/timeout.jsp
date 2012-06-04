@@ -7,7 +7,7 @@
 <jsp:include page="../../template/header.jsp"></jsp:include>
 
 <div style="text-align: center">
-	<p style="font-size: 20px; font-weight: bold; text-align: center;">Usuário não logado ou sessão expirada.</p>
+	<p class="mensagemAviso">Usuário não logado ou sessão expirada. Por favor, acesse novamente o sistema através do portal do servidor.</p>
 	<img 
 		alt="Usuário não logado ou sessão expirada" 
 		title="Usuário não logado ou sessão expirada" 

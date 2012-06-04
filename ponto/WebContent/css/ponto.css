@@ -147,6 +147,9 @@ CABEÇALHO [FIM]
 /****************************************************************************
 CORPO [INÍCIO]
 *****************************************************************************/
+/****************************************************************************
+CORPO
+*****************************************************************************/
 body{
 	font-family: arial, verdana, sans-serif;
 	font-weight: normal;
@@ -154,10 +157,6 @@ body{
 	padding:0px;
 	margin:0px;
 	width: 100%;
-}
-input[type="submit"], input[type="button"]{
-	font-size: 20px;
-	font-weight: bold;
 }
 #corpo{
 	position: absolute;
@@ -169,6 +168,50 @@ input[type="submit"], input[type="button"]{
 	width: 100%; 
 	float: left;
 }
+
+h1.titulo{
+	text-align: justify;
+	font-size: 2em; 
+	font-weight: bold;
+	text-indent: 1.3em;
+	background-image: url("/ponto/images/location_icon.gif");
+	background-repeat: no-repeat;
+	height: 36px;
+}
+p.mensagemAviso{
+	margin-left: 1em;
+	text-align: center;
+	font-size: 2em; 
+	font-weight: bold;
+}
+
+/****************************************************************************
+FORMULÁRIO
+*****************************************************************************/
+form{
+	width: 100%;
+	text-align: center;
+}
+input[type="submit"], input[type="button"]{
+	font-size: 20px;
+	font-weight: bold;
+}
+form.smallForm{
+	border-radius: 15px;
+	-moz-border-radius: 15px;
+	background-color: #464646;
+	color: #FFF;
+	padding: 1em;
+}
+div.novaLinhaFormulario{
+	display: block;
+	width: 100%;
+	margin-top: 1em;
+}
+label.lblCampoFormulario{
+	font-weight: bold;
+}
+
 /****************************************************************************
 CORPO [FIM]
 *****************************************************************************/

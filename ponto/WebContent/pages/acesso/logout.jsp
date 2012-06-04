@@ -7,7 +7,7 @@
 <jsp:include page="../../template/header.jsp"></jsp:include>
 
 <div style="text-align: center">
-	<p style="font-size: 20px; font-weight: bold; text-align: center;">Logout executado com sucesso para acessar novamente o Ponto Eletrônico vá no Portal do Servidor.</p>
+	<p class="mensagemAviso">Logout executado com sucesso para acessar novamente o Ponto Eletrônico vá no Portal do Servidor.</p>
 	<img 
 		alt="Refaça o login através do Portal do Servidor" 
 		title="Refaça o login através do Portal do Servidor" 
