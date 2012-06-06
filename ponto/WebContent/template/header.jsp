@@ -39,27 +39,25 @@
 	<div id="menuFill"></div>
 </div>
 <div id="corpo">
+	<div style="float: left;">
+		<h1 class="titulo"><%= (request.getParameter("titulo") != null ? request.getParameter("titulo") : request.getParameter("titulo")) %></h1>
+	</div>
+	<div id="msgsErroMinimizada">
+		<span>Clique aqui para rever erros.</span>
+	</div>
+	<div style="clear: both;"></div>
 	<div id="msgsErro" class="msgsContainer" style="<%= SessaoUtil.getDisplayTypeRequiredLogonItens(request)%>">
 		<div id="msgErroAviso">Ocorreu um erro ao processar a sua requisição</div>
-		<div class="msgFechar">
-			<img 
-				src="/ponto/images/close.png"
-				alt="Fechar mensagens de erro"
-				title="Fechar mensagens de erro"
-				width="32px"
-				height="32px" />
-		</div>
 		<div class="itensMsg"><%= (request.getAttribute("ERRO") != null ? request.getAttribute("ERRO") : "") %></div>
+		<div class="msgFechar">
+			<input id="btnFecharMsgsErro" type="button" value="Esconder alerta" />
+		</div>
+		
 	</div>
 	<div id="msgsSucesso" class="msgsContainer" style="<%= SessaoUtil.getDisplayTypeRequiredLogonItens(request)%>">
-		<div class="msgFechar">
-			<img 
-				src="/ponto/images/close.png"
-				alt="Fechar mensagens de sucesso"
-				title="Fechar mensagens de sucesso"
-				width="32px"
-				height="32px" />
-		</div>
 		<div class="itensMsg"><%= (request.getAttribute("SUCESSO") != null ? request.getAttribute("SUCESSO") : "") %></div>
+		<div id="btnFecharMsgsErro" class="msgFechar">
+			<input type="button" value="Fechar Mensagem"/>
+		</div>
 	</div>
 	<div id="bodyContent">

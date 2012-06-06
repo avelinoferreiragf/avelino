@@ -104,40 +104,49 @@ MENU DO SISTEMA
 MENSAGENS
 *****************************************************************************/
 div.msgsContainer{
-	float: left;
-	left: 1em;
 	font-weight: bold;
 	font-size: 20px;
-	border-radius: 15px;
-	-moz-border-radius: 15px;
-	width: 90%;
-	margin-left: 5%;
-	margin-right: 5%;
+	border: 1px solid #EEEEEE;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-moz-box-shadow: 10px 10px 5px #888;
+	-webkit-box-shadow: 10px 10px 5px #888;
+	box-shadow: 10px 10px 5px #888;
+	width: 70%;
+	margin: 0px auto;
 	display: none;
 
 }
 div.itensMsg{
-	float: left;
-	width: 100%;
+	margin-left: 100px;
 	text-align: justify;
 }
 div.msgFechar{
-	float: right;
-	margin-right: 0.5em;
-	cursor: pointer;	
+	background-color: #EEEEEE;
+	text-align: right;
+	vertical-align: bottom;
+	height: 3em;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	margin-top:110px;
+}
+
+div.msgFechar input[type="button"]{
+	margin-top: 1em;
 }
 
 #msgsErro{
-	color: #530000;
-	background-color: #FE3939;
+	background-image: url("/ponto/images/Alarm-Error-icon.png");
+	background-repeat: no-repeat;
+
 }
 #msgErroAviso{
-	margin-left: 1em;
-	float: left;
+	margin-left: 100px;
 }
 #msgsSucesso{
-	color: #1B4916;
-	background-color: #AFCB77;
+	background-image: url("/ponto/images/Alarm-Tick-icon.png");
+	background-repeat: no-repeat;
+	min-height: 150px;
 }
 
 /****************************************************************************
@@ -196,21 +205,6 @@ input[type="submit"], input[type="button"]{
 	font-size: 20px;
 	font-weight: bold;
 }
-form.smallForm{
-	border-radius: 15px;
-	-moz-border-radius: 15px;
-	background-color: #464646;
-	color: #FFF;
-	padding: 1em;
-}
-div.novaLinhaFormulario{
-	display: block;
-	width: 100%;
-	margin-top: 1em;
-}
-label.lblCampoFormulario{
-	font-weight: bold;
-}
 
 /****************************************************************************
 CORPO [FIM]
@@ -241,3 +235,50 @@ RODAPÉ [INÍCIO]
 /****************************************************************************
 RODAPÉ [FIM]
 *****************************************************************************/
+#msgsErroMinimizada{
+	float: right;
+	color: #530000;
+	background: #FFBFBF;
+	border: 2px solid #FF2424;
+	background-image: url("/ponto/images/exclamation.png");
+	background-repeat: no-repeat;
+	background-position: left;
+	text-indent: 20px;
+	display: none;
+	cursor: pointer;
+}
+form.pontoForm{
+	border-radius: 15px;
+	-moz-border-radius: 15px;
+	-moz-box-shadow: 10px 10px 5px #888;
+	-webkit-box-shadow: 10px 10px 5px #888;
+	box-shadow: 10px 10px 5px #888;
+	background-color: #464646;
+	color: #FFF;
+	padding: 1em;
+	text-align: left;
+	margin: 0px auto;
+}
+form.pontoForm div.novaLinhaFormulario:last-child, div.novaLinhaFormulario:first-child{
+	text-align: center;
+
+}
+div.novaLinhaFormulario{
+	display: block;
+	width: 100%;
+	margin-top: 1em;
+}
+.lblCampoFormulario{
+	font-weight: bold;
+	width: 10em;
+	margin-left: 1em;
+	float:left;
+}
+input[type="text"], [type="password"]{
+    height: 1em;
+}
+input[type="submit"], input[type="button"]{
+	font-size: 20px;
+	font-weight: bold;
+}
+

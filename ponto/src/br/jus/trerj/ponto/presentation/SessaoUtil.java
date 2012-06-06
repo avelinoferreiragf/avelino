@@ -30,6 +30,7 @@ public class SessaoUtil implements Serializable {
 	public static String getDisplayTypeRequiredLogonItens(HttpServletRequest request){
 		if(isUsuarioLogado(request))
 			return "";
-		return "display:none";
+		//return "display:none";
+		return "";
 	}
 }

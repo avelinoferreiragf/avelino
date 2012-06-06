@@ -12,4 +12,5 @@
 	</form>
 </div>
 <script src="/ponto/js/jquery-1.7.2.min.js" type="text/javascript"></script>
+<script src="/ponto/js/jquery-ui-1.8.21.custom.min.js" type="text/javascript"></script>
 <script src="/ponto/js/telaPrincipal.min.js" type="text/javascript"></script>
