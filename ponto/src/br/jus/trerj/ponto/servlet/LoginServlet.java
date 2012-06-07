@@ -21,7 +21,7 @@ public class LoginServlet extends BaseServlet {
 		try {
 			throw new NullPointerException("Login não implementado");
 		} catch (Exception e) {
-			this.addMensagemSucesso(request, e.getMessage());
+			this.addMensagemErro(request, e);
 		}
 		this.getServletContext().getRequestDispatcher("/pages/acesso/login.jsp").forward(request, response);
 	}

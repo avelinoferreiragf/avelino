@@ -10,8 +10,6 @@ LOGO DO SISTEMA
 	left: 0px;
 	right: 0px;
 	top: 0px;
-	background-image: url("/ponto/images/clock.png");
-	background-repeat: no-repeat;
 	background-color: #464646;
 	border-bottom: 1px solid white;
 	width: 100%;
@@ -20,27 +18,33 @@ LOGO DO SISTEMA
 	vertical-align: middle;
 	color: white;
 }
+#logoImage{
+	background: url('/ponto/images/ponto-iconset.png') no-repeat -2px -231px;
+	width: 63px;
+	height: 63px;
+	float: left;
+}
 #logo div.titulo{
 	font-size: 40px;
-	text-indent: 70px;
 	font-weight: bold;
 	margin-top: 10px;
 	float: left;
 }
 #divSair{
 	float: right;
+	margin-right: 1em;
+	margin-top: 0.5em;
 	font-weight: bold;
-}
-
-#divSair img{
-	display: block;
-	margin:0px auto;
-	cursor: pointer;
-	width: 48px;
+	background: url('/ponto/images/ponto-iconset.png') no-repeat -9px -301px;
+	width: 47px;
 	height: 48px;
+	cursor: p
 	
 }
-
+#divSair div{
+	margin-top: 49px;
+	text-align: center;
+}
 /****************************************************************************
 MENU DO SISTEMA
 *****************************************************************************/
@@ -109,17 +113,19 @@ div.msgsContainer{
 	border: 1px solid #EEEEEE;
 	border-radius: 5px;
 	-moz-border-radius: 5px;
-	-moz-box-shadow: 10px 10px 5px #888;
-	-webkit-box-shadow: 10px 10px 5px #888;
-	box-shadow: 10px 10px 5px #888;
+	-moz-box-shadow: 5px 5px 5px #888;
+	-webkit-box-shadow: 5px 5px 5px #888;
+	box-shadow: 5px 5px 5px #888;
 	width: 70%;
 	margin: 0px auto;
+	margin-bottom: 1em;
 	display: none;
 
 }
 div.itensMsg{
 	margin-left: 100px;
 	text-align: justify;
+	float: left;
 }
 div.msgFechar{
 	background-color: #EEEEEE;
@@ -135,20 +141,40 @@ div.msgFechar input[type="button"]{
 	margin-top: 1em;
 }
 
-#msgsErro{
-	background-image: url("/ponto/images/Alarm-Error-icon.png");
-	background-repeat: no-repeat;
-
-}
 #msgErroAviso{
 	margin-left: 100px;
+	
 }
-#msgsSucesso{
-	background-image: url("/ponto/images/Alarm-Tick-icon.png");
-	background-repeat: no-repeat;
-	min-height: 150px;
+#imgSucesso{
+	background: url('/ponto/images/ponto-iconset.png') no-repeat -101px -131px;
+	width: 95px;
+	height: 95px;
+	float: left;
 }
-
+#imgErro{
+	background: url('/ponto/images/ponto-iconset.png') no-repeat 0 -130px;
+	width: 95px;
+	height: 95px;
+	float: left;
+}
+#msgsErroMinimizada{
+	float: right;
+	color: #530000;
+	background: #FFBFBF;
+	border: 2px solid #FF2424;
+	background-position: left;
+	text-indent: 20px;
+	display: none;
+	cursor: pointer;
+}
+#msgsErroMinimizada div{
+	float: left;
+}
+#imgMsgsErroMinimizada{
+	background: url('/ponto/images/ponto-iconset.png') no-repeat -13px -365px;
+	width: 14px;
+	height: 14px;
+}
 /****************************************************************************
 CABEÇALHO [FIM]
 *****************************************************************************/
@@ -177,15 +203,17 @@ body{
 	width: 100%; 
 	float: left;
 }
+#tituloPagina{
+	background: url('/ponto/images/ponto-iconset.png')  no-repeat -82px -303px;
+	width: 24px;
+	height: 42px;
 
+}
 h1.titulo{
 	text-align: justify;
 	font-size: 2em; 
 	font-weight: bold;
 	text-indent: 1.3em;
-	background-image: url("/ponto/images/location_icon.gif");
-	background-repeat: no-repeat;
-	height: 36px;
 }
 p.mensagemAviso{
 	margin-left: 1em;
@@ -194,6 +222,12 @@ p.mensagemAviso{
 	font-weight: bold;
 }
 
+.ouch{
+	background: url('/ponto/images/ponto-iconset.png') no-repeat -145px -12px;
+	width: 113px;
+	height: 116px;
+	margin: 0px auto;
+}
 /****************************************************************************
 FORMULÁRIO
 *****************************************************************************/
@@ -235,18 +269,6 @@ RODAPÉ [INÍCIO]
 /****************************************************************************
 RODAPÉ [FIM]
 *****************************************************************************/
-#msgsErroMinimizada{
-	float: right;
-	color: #530000;
-	background: #FFBFBF;
-	border: 2px solid #FF2424;
-	background-image: url("/ponto/images/exclamation.png");
-	background-repeat: no-repeat;
-	background-position: left;
-	text-indent: 20px;
-	display: none;
-	cursor: pointer;
-}
 form.pontoForm{
 	border-radius: 15px;
 	-moz-border-radius: 15px;

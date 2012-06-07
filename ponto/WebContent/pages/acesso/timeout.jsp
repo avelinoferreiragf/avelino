@@ -4,17 +4,19 @@
 <html>
 <jsp:include page="../../template/head.jsp"></jsp:include>
 <body onload="fecharTela();">
-<jsp:include page="../../template/header.jsp"></jsp:include>
+<jsp:include page="../../template/header.jsp">
+	<jsp:param value="Timeout" name="titulo"/>
+</jsp:include>
 
-<div style="text-align: center">
-	<p class="mensagemAviso">Usuário não logado ou sessão expirada. Por favor, acesse novamente o sistema através do portal do servidor.</p>
-	<img 
-		alt="Usuário não logado ou sessão expirada" 
-		title="Usuário não logado ou sessão expirada" 
-		src="/ponto/images/ouch_128.png"
-		style="margin: 0px auto;"
-		width="128px"
-		height="128px" />
+<div
+	id="timeout" 
+	style="text-align: center">
+	<p class="mensagemAviso">
+		Usuário não logado ou sessão expirada. Por favor, acesse novamente o sistema através do portal do servidor.
+	</p>
+	<div
+		class="ouch">
+	</div>
 </div>
 <jsp:include page="../../template/foot.jsp"></jsp:include>
 </body>
