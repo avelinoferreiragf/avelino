@@ -1,5 +1,7 @@
 $(document).ready(function(){
 	$(".cancelar").click(btnCancelarHandlerClick);
+	$("#btnFecharCancelamento").click(msgFecharCancelamentoHandlerClick);
+
 });
 
 function btnCancelarHandlerClick(eventData){
@@ -25,5 +27,7 @@ function btnCancelarHandlerClick(eventData){
 	$("#idPedido").val(idPedido);
 	$("#msgCancelamento").show();
 	window.scrollTo(0, 0);
-	
+}
+function msgFecharCancelamentoHandlerClick(eventData){
+	$("#msgCancelamento").hide();
 }

@@ -58,6 +58,8 @@ function btnAvaliarHandlerClick(button, imgClass, btnValue, action){
 }
 function msgFecharAvaliacaoHandlerClick(eventData){
 	$("#msgAvaliar").hide();
+	$("#msgsErro").hide();
+	$("#msgsErroMinimizada").hide();
 	$("#indexNaTabela").val(null);
 	$("#idPedidoAvaliado").val(null);
 	$("#justificativaIndeferimento").val("");

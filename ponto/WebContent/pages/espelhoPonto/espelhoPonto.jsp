@@ -18,7 +18,7 @@
 		<div id="msgCancelamentoItens"></div>
 		<div class="msgFechar">
 			<input id="btnConfirmarCancelamento" type="submit" value="Confirmar" />
-			<input id="btnFecharMsgsErro" type="button" value="Cancelar" />
+			<input id="btnFecharCancelamento" type="button" value="Cancelar" />
 		</div>
 	</div>
 </form>
