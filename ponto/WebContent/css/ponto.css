@@ -304,3 +304,38 @@ input[type="submit"], input[type="button"]{
 	font-weight: bold;
 }
 
+/****************************************************************************
+TABELAS
+*****************************************************************************/
+table{
+	margin: 0px auto;
+	border: #222222 2px solid;
+	border-left: #222222 1px solid;
+	color: #000;
+	border-spacing: 0px;
+}
+thead{
+	background-color: #464646;
+	color: #FFF;
+	font-size: 1.2em;
+	text-align: center;
+}
+th{
+	padding-right:1em;
+	padding-left: 1em;
+	border-left: 1px solid #FFF; 
+}
+th:FIRST-CHILD{
+	border-left: 0px; 
+}
+tbody tr:nth-child(even) {
+	background: #FBFBFB;
+}
+tbody tr:nth-child(odd) {
+	background: #F6F6F6;
+}
+td{
+	border-top: 1px solid;
+	border-left: 1px solid;
+}
+

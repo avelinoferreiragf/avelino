@@ -1,0 +1,56 @@
+@CHARSET "ISO-8859-1";
+/****************************************************************************
+AVALIAÇÃO
+*****************************************************************************/
+.deferir{
+	background: url('/ponto/images/ponto-iconset.png') no-repeat -125px -299px;
+	width: 48px;
+	height: 48px;
+	float: left;
+	cursor: pointer;
+}
+.indeferir{
+	background: url('/ponto/images/ponto-iconset.png') no-repeat -195px -305px;
+	width: 36px;
+	height: 37px;
+	float: left;
+	margin-top: 5px;
+	margin-left: 1em;
+	cursor: pointer;
+}
+
+
+.imgDeferir{
+	background: url('/ponto/images/ponto-iconset.png') no-repeat -299px -132px;
+	width: 94px;
+	height: 94px;
+	float: left;
+	margin-right: 10px;
+}
+
+.imgIndeferir{
+	background: url('/ponto/images/ponto-iconset.png') no-repeat -416px -143px;
+	width: 72px;
+	height: 73px;
+	float: left;
+	margin-right: 10px;
+}
+
+#spanJustificativaIndeferimento{
+	display: block;
+}
+#divJustificativaIndeferimento{
+	display: none;
+	text-align: justify;
+	margin-top: 1em;
+	margin-left: 82px;
+	display: block;
+}
+
+#justificativaIndeferimento{
+	width: 40em;
+	height: 5em;
+}
+#frmAvaliacao{
+	text-align: justify;
+}

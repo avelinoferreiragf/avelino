@@ -1,0 +1,18 @@
+@CHARSET "ISO-8859-1";
+/****************************************************************************
+CANCELAMENTO
+*****************************************************************************/
+.cancelar{
+	background: url('/ponto/images/ponto-iconset.png') no-repeat -243px -299px;
+	width: 45px;
+	height: 48px;
+	cursor: pointer;
+	margin: 0px auto;
+}
+#imgCancelamento{
+	background: url('/ponto/images/ponto-iconset.png') no-repeat -204px -132px;
+	width: 90px;
+	height: 94px;
+	float: left;
+}
+
